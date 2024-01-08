@@ -1,0 +1,103 @@
+body{
+    display: grid;
+    height: 10vh;
+    width: 100vw;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer"
+    "nav";
+    grid-template-columns:100px;
+    grid-template-rows:300px;
+    gap: 10px;
+
+}
+header,main,nav,footer{
+    background-color: aqua;
+    display: flex;
+    padding: 60px;
+    border-radius: 10%;
+    justify-content: center;
+    align-items: center;
+}
+li{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100px;
+}
+li>a{
+    padding: 10px;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: black;
+}
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+header>  li{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    height: 100px;
+}
+header>li>a{
+    padding: 10px;
+    height: 2px;
+    width: 2px;
+    border-radius: 50%;
+    background-color: black;
+}
+main{
+    display: flex;
+    
+    height: 100px;
+    width: 500px;
+}
+main>span{
+    display: flex;
+    flex: 1 1 50%;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    flex-direction: column;
+    border-radius: 10%;
+}
+main>span>div{
+    border-radius: 10%;
+    gap: 10px;
+}
+nav{
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    flex-direction: column;
+}
+footer{
+    display: flex;
+    flex: 1 1 50%;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    flex-direction: column;
+}
+header> div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
